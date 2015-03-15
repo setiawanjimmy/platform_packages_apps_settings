@@ -27,4 +27,10 @@
                 android:targetClass="com.android.systemui.tuner.NavBarTunerActivity" />
         </PreferenceScreen>
 
+   	<com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_navbar"
+            android:title="@string/double_tap_sleep_nav_bar_title"
+            android:summary="@string/double_tap_sleep_nav_bar_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
