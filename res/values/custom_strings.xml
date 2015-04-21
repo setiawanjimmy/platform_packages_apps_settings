@@ -85,4 +85,9 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
+
 </resources>
