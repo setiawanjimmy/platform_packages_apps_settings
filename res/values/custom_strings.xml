@@ -549,4 +549,9 @@
     <string name="notification_tint_summary_off">Title color on notification will be handled by the theme</string>
     <string name="notification_tint_summary_on">Title color on notification will be taken from app icon color</string>
 
+    <!-- Doze invert -->
+    <string name="doze_notification_color_invert_title">Doze notification inversion</string>
+    <string name="doze_notification_color_invert_summary_off">Doze notifications will not be inverted. Use for dark themes</string>
+    <string name="doze_notification_color_invert_summary_on">Doze notifications will be inverted. Use for light/stock theme</string>
+
 </resources>
