@@ -16,6 +16,8 @@
 
 <resources>
 
+    <color name="white">#FFF</color>
+
     <!-- Exposed Colors -->
     <color name="storage_summary_title_color">#ff607d8b</color>
 
@@ -28,5 +30,11 @@
     <color name="condition_card_divider_color">@android:color/white</color>
     <color name="condition_card_first_button_text_color">@*android:color/primary_text_material_dark</color>
     <color name="condition_card_second_button_text_color">@*android:color/primary_text_material_dark</color>
+
+    <!-- Expanded desktop -->
+    <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
+    <drawable name="expanded_item_bg">@android:color/background_light</drawable>
+    <color name="expanded_button_color_normal">#4CAF50</color>
+    <color name="expanded_button_color_close">#F44336</color>
 
 </resources>
