@@ -97,4 +97,16 @@
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.OtherSoundSettings" />
 
+        <PreferenceCategory
+                android:key="advanced_category"
+                android:title="@string/advanced_category">
+
+        <com.android.settings.preference.SystemSettingSwitchPreference
+                android:key="swap_volume_buttons"
+                android:title="@string/swap_volume_buttons_title"
+                android:summary="@string/swap_volume_buttons_summary"
+                android:defaultValue="true"/>
+
+        </PreferenceCategory>
+
 </PreferenceScreen>

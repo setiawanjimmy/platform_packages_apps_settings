@@ -107,4 +107,9 @@
     <string name="remove_tile_summaries_title">Remove tile summaries</string>
     <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
 
+    <!-- Volume button orientation based on current rotation -->
+    <string name="advanced_category">Advanced</string>
+    <string name="swap_volume_buttons_title">Swap volume rocker orientation</string>
+    <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
+
 </resources>
