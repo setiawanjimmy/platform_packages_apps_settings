@@ -533,4 +533,7 @@
     <string name="status_bar_beltz_logo_title">Beltz logo</string>
     <string name="status_bar_beltz_logo_summary">Enable to show Beltz logo on the left side of the statusbar</string>
 
+   <!-- App details: open play store link if app is user installed -->
+   <string name="app_play_store">Google Play</string>
+
 </resources>
