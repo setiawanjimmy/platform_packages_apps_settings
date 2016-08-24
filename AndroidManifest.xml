@@ -123,8 +123,16 @@
 
         <activity android:name=".Settings$WirelessSettings"
             android:label="@string/header_category_wireless_networks">
-            <intent-filter android:priority="4">
+            <intent-filter android:priority="5">
                 <action android:name="com.android.settings.category.wireless" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Settings$CustomSettings"
+            android:label="@string/header_category_custom">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.custom" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -2381,6 +2389,20 @@
             android:launchMode="singleTop"
             android:theme="@style/CryptKeeperBlankTheme"
         />
+
+        <!-- Custom settings activity. -->
+        <activity android:name="Settings$CustomSettingsActivity"
+                android:label="@string/custom_settings_title"
+                android:icon="@drawable/ic_advanced_settings">
+            <intent-filter android:priority="1">
+                <action android:name="com.android.settings.action.SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.custom" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.custom.CustomSettings" />
+        </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"

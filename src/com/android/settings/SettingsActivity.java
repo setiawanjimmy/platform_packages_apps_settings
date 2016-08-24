@@ -70,6 +70,7 @@ import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.WriteSettingsDetails;
 import com.android.settings.applications.VrListenerSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.custom.CustomSettings;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.SearchResultsSummary;
 import com.android.settings.datausage.DataUsageSummary;
@@ -345,6 +346,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             TestingSettings.class.getName(),
             WifiAPITest.class.getName(),
             WifiInfo.class.getName(),
+            CustomSettings.class.getName(),
     };
 
 
@@ -542,6 +544,7 @@ public class SettingsActivity extends SettingsDrawerActivity
 
         mIsShowingDashboard = className.equals(Settings.class.getName())
                 || className.equals(Settings.WirelessSettings.class.getName())
+                || className.equals(Settings.CustomSettings.class.getName())
                 || className.equals(Settings.DeviceSettings.class.getName())
                 || className.equals(Settings.PersonalSettings.class.getName())
                 || className.equals(Settings.WirelessSettings.class.getName());
