@@ -249,4 +249,8 @@
     <string name="qs_rows_columns_7_title">7</string>
     <string name="qs_rows_columns_8_title">8</string>
 
+    <!-- Device info settings -->
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">Memory</string>
+
 </resources>
