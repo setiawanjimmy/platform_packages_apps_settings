@@ -16,8 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Custom menus -->
-    <string name="header_category_custom">Custom settings</string>
-    <string name="custom_settings_title">Tweaks</string>
+    <string name="custom_settings_title">System UI</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_clock_title">Clock settings</string>
     <string name="misc_title">Miscellaneous settings</string>
