@@ -75,6 +75,25 @@
             android:summaryOn="@string/summary_heads_up_enabled"
             android:summaryOff="@string/summary_heads_up_disabled" />
 
+        <PreferenceScreen
+            android:key="systemui_tuner_statusbar"
+            android:title="@string/systemui_tuner_statusbar_title"
+            android:summary="@string/systemui_tuner_statusbar_summary" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="systemui_tuner_other"
+            android:title="@string/systemui_tuner_other_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.OtherPrefsActivity" />
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -93,4 +93,11 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
 
+    <!-- SystemUI Tuner Parts -->
+    <string name="systemui_tuner_statusbar_title">Status bar items</string>
+    <string name="systemui_tuner_statusbar_summary">Show/hide status bar items</string>
+    <string name="systemui_tuner_navbar_title">Navigation bar items</string>
+    <string name="systemui_tuner_navbar_summary">Edit navigation bar items</string>
+    <string name="systemui_tuner_other_title">Other</string>
+
 </resources>
