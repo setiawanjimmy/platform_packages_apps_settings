@@ -305,4 +305,7 @@
     <!-- Superuser header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="superuser_title">Superuser</string>
 
+    <!-- Substratum header name -->
+    <string name="substratum_settings_title">Substratum</string>
+
 </resources>

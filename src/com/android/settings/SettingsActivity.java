@@ -117,6 +117,7 @@ import com.android.settings.search.Index;
 import com.android.settings.sim.SimSettings;
 import com.android.settings.tts.TextToSpeechSettings;
 import com.android.settings.users.UserSettings;
+import com.android.settings.custom.SubstratumLaunch;
 import com.android.settings.vpn2.VpnSettings;
 import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.widget.SwitchBar;
@@ -352,7 +353,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             WifiAPITest.class.getName(),
             WifiInfo.class.getName(),
             CustomSettings.class.getName(),
-            AmbientSettings.class.getName()
+            AmbientSettings.class.getName(),
+            SubstratumLaunch.class.getName()
     };
 
 
@@ -1104,6 +1106,15 @@ public class SettingsActivity extends SettingsDrawerActivity
                 Settings.PrintSettingsActivity.class.getName()),
                 pm.hasSystemFeature(PackageManager.FEATURE_PRINTING), isAdmin, pm);
 
+        boolean substratumSupported = false;
+        try {
+            substratumSupported = (pm.getPackageInfo("projekt.substratum", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                Settings.SubstratumLaunchActivity.class.getName()),
+                substratumSupported, isAdmin, pm);
+
         final boolean showDev = mDevelopmentPreferences.getBoolean(
                     DevelopmentSettings.PREF_SHOW, android.os.Build.TYPE.equals("eng")
                     || android.os.Build.TYPE.equals("userdebug") || android.os.Build.TYPE.equals("user"))
@@ -1123,14 +1134,14 @@ public class SettingsActivity extends SettingsDrawerActivity
                 suSupported, isAdmin, pm);
 
         // SuperUser
-        boolean suSupported = false;
+        boolean phhSupported = false;
         try {
-            suSupported = (getPackageManager().getPackageInfo("me.phh.superuser", 0).versionCode > 0);
+            phhSupported = (getPackageManager().getPackageInfo("me.phh.superuser", 0).versionCode > 0);
         } catch (PackageManager.NameNotFoundException e) {
         }
         setTileEnabled(new ComponentName(packageName,
                         Settings.SuperUserActivity.class.getName()),
-                suSupported, isAdmin, pm);
+                phhSupported, isAdmin, pm);
 
         // Reveal development-only quick settings tiles
         DevelopmentTiles.setTilesEnabled(this, showDev);
