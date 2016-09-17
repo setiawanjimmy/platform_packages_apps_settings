@@ -141,4 +141,8 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string>
 
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume rocker wake</string>
+    <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
 </resources>
