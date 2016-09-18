@@ -37,4 +37,10 @@
             android:summaryOn="@string/summary_heads_up_enabled"
             android:summaryOff="@string/summary_heads_up_disabled" />
 
+    <!-- Force expanded notifications -->
+    <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/force_expanded_notifications_title"
+            android:summary="@string/force_expanded_notifications_summary" />
+
 </PreferenceScreen>
