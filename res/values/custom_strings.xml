@@ -120,6 +120,8 @@
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
 
+    <!-- Status bar - Network traffic -->
+    <string name="network_traffic_options_title">Network traffic options</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>

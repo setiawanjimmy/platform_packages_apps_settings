@@ -74,19 +74,6 @@
             android:summary="@string/double_tap_to_sleep_summary"
             android:defaultValue="false" />
 
-        <!-- Heads up -->
-        <com.android.settings.preference.GlobalSettingSwitchPreference
-            android:key="heads_up_notifications_enabled"
-            android:title="@string/heads_up_notifications"
-            android:summaryOn="@string/summary_heads_up_enabled"
-            android:summaryOff="@string/summary_heads_up_disabled" />
-
-        <PreferenceScreen
-            android:key="network_traffic_state"
-            android:fragment="com.android.settings.NetworkTraffic"
-            android:summary="@string/network_traffic_summary"
-            android:title="@string/network_traffic_title" />
-
         <PreferenceScreen
             android:key="systemui_tuner_statusbar"
             android:title="@string/systemui_tuner_statusbar_title"
