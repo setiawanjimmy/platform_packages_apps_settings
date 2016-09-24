@@ -24,12 +24,6 @@
             android:key="notification_pulse"
             android:title="@string/notification_pulse_title" />
 
-    <!-- When device is locked -->
-    <com.android.settings.notification.RestrictedDropDownPreference
-            android:key="lock_screen_notifications"
-            android:title="@string/lock_screen_notifications_title"
-            android:summary="%s" />
-
     <!-- Heads up -->
     <com.android.settings.preference.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
@@ -42,5 +36,11 @@
             android:key="force_expanded_notifications"
             android:title="@string/force_expanded_notifications_title"
             android:summary="@string/force_expanded_notifications_summary" />
+
+    <!-- When device is locked -->
+    <com.android.settings.notification.RestrictedDropDownPreference
+            android:key="lock_screen_notifications"
+            android:title="@string/lock_screen_notifications_title"
+            android:summary="%s" />
 
 </PreferenceScreen>
