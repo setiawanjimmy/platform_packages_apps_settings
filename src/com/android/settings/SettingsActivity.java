@@ -223,6 +223,8 @@ public class SettingsActivity extends SettingsDrawerActivity
 
     private static final String SUPERSU_FRAGMENT = "com.android.settings.SuperSU";
 
+    private static final String SUPERUSER_FRAGMENT = "com.android.settings.SuperUser";
+
     private String mFragmentClass;
 
     private CharSequence mInitialTitle;
@@ -1018,6 +1020,14 @@ public class SettingsActivity extends SettingsDrawerActivity
             return null;
         }
 
+        if (SUPERUSER_FRAGMENT.equals(fragmentName)) {
+            Intent superSUIntent = new Intent();
+            superSUIntent.setClassName("me.phh.superuser", "com.koushikdutta.superuser.MainActivity");
+            startActivity(superSUIntent);
+            finish();
+            return null;
+        }
+
         if (validate && !isValidFragment(fragmentName)) {
             throw new IllegalArgumentException("Invalid fragment for this activity: "
                     + fragmentName);
@@ -1110,6 +1120,16 @@ public class SettingsActivity extends SettingsDrawerActivity
         }
         setTileEnabled(new ComponentName(packageName,
                         Settings.SuperSUActivity.class.getName()),
+                suSupported, isAdmin, pm);
+
+        // SuperUser
+        boolean suSupported = false;
+        try {
+            suSupported = (getPackageManager().getPackageInfo("me.phh.superuser", 0).versionCode > 0);
+        } catch (PackageManager.NameNotFoundException e) {
+        }
+        setTileEnabled(new ComponentName(packageName,
+                        Settings.SuperUserActivity.class.getName()),
                 suSupported, isAdmin, pm);
 
         // Reveal development-only quick settings tiles
