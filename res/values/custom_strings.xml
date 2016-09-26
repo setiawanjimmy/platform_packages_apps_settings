@@ -18,6 +18,7 @@
     <!-- Custom menus -->
     <string name="custom_settings_title">System UI</string>
     <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_battery_title">Battery settings</string>
     <string name="status_bar_clock_title">Clock settings</string>
     <string name="misc_title">Miscellaneous settings</string>
     <string name="navigation_bar_title">Navigation bar</string>
@@ -227,5 +228,9 @@
     <!-- Quick settings animation-->
     <string name="qs_animation_title">Quick settings animation</string>
     <string name="qs_animation_summary">Enable the nougat quick settings animation</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_percent_title">Battery percent</string>
+    <string name="status_bar_battery_percent_summary">Display percent in battery drawable</string>
 
 </resources>
