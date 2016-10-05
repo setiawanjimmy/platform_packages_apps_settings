@@ -125,7 +125,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/misc_title">
+        android:title="@string/quick_settings_title">
 
         <com.android.settings.preference.SystemSettingSwitchPreference
             android:key="qs_fancy_animation"
@@ -151,6 +151,17 @@
             android:title="@string/status_bar_expanded_qs_settings"
             android:summary="@string/status_bar_expanded_qs_settings_summary"
             android:fragment="com.pure.settings.fragments.StatusbarExpandedQSSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/misc_title">
+
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_data_advanced"
+            android:title="@string/qs_advanced_data_title"
+            android:summary="@string/qs_advanced_data_summary"
+            android:defaultValue="false" />
 
         <PreferenceScreen
             android:key="systemui_tuner_other"

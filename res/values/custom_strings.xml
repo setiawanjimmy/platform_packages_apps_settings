@@ -22,6 +22,7 @@
     <string name="status_bar_clock_title">Clock settings</string>
     <string name="misc_title">Miscellaneous settings</string>
     <string name="navigation_bar_title">Navigation bar</string>
+    <string name="quick_settings_title">Quick settings</string>
 
     <!-- Status bar quick qs pulldown -->
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
@@ -273,5 +274,9 @@
 
     <string name="brightness_icon_title">Brightness icon </string>
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
+
+    <!-- Advanced data tile -->
+    <string name="qs_advanced_data_title">Advanced data tile</string>
+    <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
 
 </resources>
