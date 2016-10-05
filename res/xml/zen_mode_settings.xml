@@ -36,4 +36,13 @@
             android:key="visual_interruptions_settings"
             android:title="@string/zen_mode_visual_interruptions_settings_title"
             android:fragment="com.android.settings.notification.ZenModeVisualInterruptionSettings" />
+
+    <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="sysui_volume_down_silent,sysui_volume_up_silent"
+            android:title="@string/volume_dnd_silent" />
+
+    <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="sysui_show_full_zen"
+            android:title="@string/tuner_full_zen_title" />
+
 </PreferenceScreen>

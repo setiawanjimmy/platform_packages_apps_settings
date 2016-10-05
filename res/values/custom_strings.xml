@@ -257,4 +257,17 @@
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
+    <!-- Toggle to enable the gesture to enter split-screen by swiping up from the Overview button -->
+    <string name="overview_nav_bar_gesture">Enable split-screen swipe-up gesture</string>
+    <string name="overview_nav_bar_gesture_desc">Enable overview button swipe up gesture to enter split-screen</string>
+
+    <!-- Option to show full do not disturb panel in volume panel -->
+    <string name="tuner_full_zen_title">Show with volume controls</string>
+
+    <!-- Do not disturb volume shorcut -->
+    <string name="volume_dnd_silent">Volume buttons shortcut</string>
+
+    <!-- Option to show brightness bar in quick settings -->
+    <string name="show_brightness">Show brightness in Quick Settings</string>
+
 </resources>
