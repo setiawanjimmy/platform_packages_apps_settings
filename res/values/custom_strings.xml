@@ -19,26 +19,12 @@
     <string name="custom_settings_title">System UI</string>
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_battery_title">Battery settings</string>
-    <string name="status_bar_clock_title">Clock settings</string>
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="quick_settings_title">Quick settings</string>
 
     <!-- Status bar quick qs pulldown -->
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
-
-    <!-- Status bar - Clock -->
-    <string name="status_bar_clock_style_title">Clock style</string>
-    <string name="status_bar_clock_style_right">Right</string>
-    <string name="status_bar_clock_style_left">Left</string>
-    <string name="status_bar_clock_style_center">Center</string>
-    <string name="status_bar_clock_style_hidden">Hidden</string>
-
-    <string name="status_bar_am_pm_title">AM/PM style</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Small</string>
-    <string name="status_bar_am_pm_hidden">Hidden (default)</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
