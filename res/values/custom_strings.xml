@@ -20,7 +20,6 @@
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_battery_title">Battery settings</string>
     <string name="status_bar_clock_title">Clock settings</string>
-    <string name="misc_title">Miscellaneous settings</string>
     <string name="navigation_bar_title">Navigation bar</string>
     <string name="quick_settings_title">Quick settings</string>
 

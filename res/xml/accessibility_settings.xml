@@ -88,15 +88,33 @@
     <PreferenceCategory
         android:key="display_category"
         android:title="@string/accessibility_display_title" >
+
+        <com.android.settings.preference.SystemSettingSwitchPreference
+                android:key="lockscreen_media_metadata"
+                android:title="@string/media_art_title"
+                android:summary="@string/media_art_summary"
+                android:defaultValue="true" />
+
         <SwitchPreference
             android:key="toggle_inversion_preference"
             android:title="@string/accessibility_display_inversion_preference_title"
             android:summary="@string/accessibility_display_inversion_preference_subtitle"
             android:persistent="false" />
+
         <PreferenceScreen
             android:fragment="com.android.settings.accessibility.ToggleDaltonizerPreferenceFragment"
             android:key="daltonizer_preference_screen"
             android:title="@string/accessibility_display_daltonizer_preference_title" />
+
+        <PreferenceScreen
+            android:key="systemui_tuner_other"
+            android:title="@string/systemui_tuner_other_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.OtherPrefsActivity" />
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
