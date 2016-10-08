@@ -121,8 +121,8 @@
     <string name="swap_volume_buttons_summary">Adjust the rocker orientation based on current rotation</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double-tap on the navigation bar to put the device to turn off the display</string>
 
     <!-- Double Tap Status Bar to Sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
