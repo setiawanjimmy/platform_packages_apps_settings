@@ -276,7 +276,7 @@
     <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
 
     <!-- Advanced data tile -->
-    <string name="qs_advanced_data_title">Advanced data tile</string>
+    <string name="qs_advanced_data_title">Data easy toggle</string>
     <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
 
     <!-- Volume key cursor control -->
@@ -509,5 +509,9 @@
     <string name="lock_clock_font_black_italic">Roboto Black Italic</string>
     <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
     <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
+
+    <!-- Tiles settings  -->
+    <string name="qs_wifi_easy_toggle_title">WiFi easy toggle</string>
+    <string name="qs_wifi_easy_toggle_summary">Enable one tap action to enable or disable WiFi</string>
 
 </resources>

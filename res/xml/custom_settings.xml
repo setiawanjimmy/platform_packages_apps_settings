@@ -133,6 +133,12 @@
             android:defaultValue="false" />
 
         <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_wifi_easy_toggle"
+            android:title="@string/qs_wifi_easy_toggle_title"
+            android:summary="@string/qs_wifi_easy_toggle_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_brightness_slider_title"
             android:summary="@string/qs_brightness_slider_summary"
