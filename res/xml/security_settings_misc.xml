@@ -124,6 +124,11 @@
                 android:title="@string/lockscreen_qs_disabled_title"
                 android:summary="@string/lockscreen_qs_disabled_summary" />
 
+        <PreferenceScreen
+            android:fragment="com.pure.settings.fragments.LockScreenItemsSettings"
+            android:key="lockscreen_items"
+            android:title="@string/lockscreen_items_settings_title" />
+
         <Preference android:key="manage_trust_agents"
                 android:title="@string/manage_trust_agents"
                 android:summary="@string/manage_trust_agents_summary"
