@@ -212,8 +212,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final int REQUEST_CODE_ENABLE_OEM_UNLOCK = 0;
 
-    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
-
     private static final int[] MOCK_LOCATION_APP_OPS = new int[] {AppOpsManager.OP_MOCK_LOCATION};
 
     private IWindowManager mWindowManager;
@@ -286,7 +284,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private ListPreference mAppProcessLimit;
 
     private SwitchPreference mShowAllANRs;
-    private SwitchPreference mKillAppLongpressBack;
 
     private ColorModePreference mColorModePreference;
 
@@ -442,8 +439,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mAllPrefs.add(mShowAllANRs);
         mResetSwitchPrefs.add(mShowAllANRs);
 
-        mKillAppLongpressBack = findAndInitSwitchPref(KILL_APP_LONGPRESS_BACK);
-
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
             mAllPrefs.add(hdcpChecking);
@@ -584,7 +579,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) != 0;
         mSwitchBar.setChecked(mLastEnabledState);
         setPrefsEnabledState(mLastEnabledState);
-        updateKillAppLongpressBackOptions();
 
         if (mHaveDebugSettings && !mLastEnabledState) {
             // Overall debugging is disabled, but there are some debug
@@ -800,17 +794,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             hdcpChecking.setSummary(summaries[index]);
             hdcpChecking.setOnPreferenceChangeListener(this);
         }
-    }
-
-    private void writeKillAppLongpressBackOptions() {
-        Settings.Secure.putInt(getActivity().getContentResolver(),
-                Settings.Secure.KILL_APP_LONGPRESS_BACK,
-                mKillAppLongpressBack.isChecked() ? 1 : 0);
-    }
-
-    private void updateKillAppLongpressBackOptions() {
-        mKillAppLongpressBack.setChecked(Settings.Secure.getInt(
-            getActivity().getContentResolver(), Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
     }
 
     private void updatePasswordSummary() {
@@ -1863,8 +1846,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeForceResizableOptions();
         } else if (INACTIVE_APPS_KEY.equals(preference.getKey())) {
             startInactiveAppsFragment();
-        } else if (preference == mKillAppLongpressBack) {
-            writeKillAppLongpressBackOptions();
         } else if (BACKGROUND_CHECK_KEY.equals(preference.getKey())) {
             startBackgroundCheckFragment();
         } else if (preference == mBluetoothDisableAbsVolume) {
