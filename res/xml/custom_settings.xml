@@ -111,6 +111,12 @@
             android:summary="@string/double_tap_to_sleep_summary"
             android:defaultValue="false" />
 
+     <PreferenceScreen
+        android:fragment="com.pure.settings.fragments.CarrierLabelSettings"
+        android:key="pure_carrier_label_settings"
+        android:title="@string/carrier_label_settings_title"
+        android:summary="@string/carrier_label_settings_summary" />
+
         <PreferenceScreen
             android:key="systemui_tuner_statusbar"
             android:title="@string/systemui_tuner_statusbar_title"
