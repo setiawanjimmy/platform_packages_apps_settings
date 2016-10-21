@@ -129,9 +129,6 @@
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
 
-    <!-- Status bar - Network traffic -->
-    <string name="network_traffic_options_title">Network traffic options</string>
-
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
     <string name="show_network_traffic_state">Status bar traffic monitor</string>
@@ -515,6 +512,9 @@
     <string name="qs_wifi_easy_toggle_summary">Enable one tap action to enable or disable WiFi</string>
     <string name="qs_bt_easy_toggle_title">Bluetooth easy toggle</string>
     <string name="qs_bt_easy_toggle_summary">Enable one tap action to enable or disable Bluetooth</string>
+
+    <!-- Advanced - Wireless & Networks -->
+    <string name="advanced_options_title">Advanced options</string>
 
     <!-- Custom carrier label and position -->
     <string name="carrier_label_settings_title">Carrier Label</string>
