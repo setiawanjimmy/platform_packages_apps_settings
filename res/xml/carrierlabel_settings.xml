@@ -16,6 +16,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">	    
 
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="status_bar_beltz_logo"
+            android:title="@string/status_bar_beltz_logo_title"
+            android:summary="@string/status_bar_beltz_logo_summary"
+            android:defaultValue="false" />
+
     <ListPreference
         android:key="status_bar_show_carrier"
         android:title="@string/show_carrier_title"

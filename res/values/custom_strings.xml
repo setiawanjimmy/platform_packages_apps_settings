@@ -528,4 +528,8 @@
     <string name="show_carrier_statusbar">Statusbar only</string>
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
 
+    <!-- Beltz Logo -->
+    <string name="status_bar_beltz_logo_title">Beltz logo</string>
+    <string name="status_bar_beltz_logo_summary">Enable to show Beltz logo on the left side of the statusbar</string>
+
 </resources>
