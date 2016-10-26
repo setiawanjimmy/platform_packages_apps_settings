@@ -1274,23 +1274,6 @@
                 android:value="com.android.settings.applications.BackgroundCheckSummary" />
         </activity>
 
-        <activity android:name="Settings$SubstratumLaunchActivity"
-            android:label="@string/substratum_settings_title"
-            android:icon="@drawable/ic_settings_substratum"
-            android:taskAffinity=""
-            android:parentActivityName="Settings">
-            <intent-filter android:priority="4">
-                <action android:name="com.android.settings.action.SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                android:value="com.android.settings.category.personal" />
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.custom.SubstratumLaunch" />
-            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
-                android:value="true" />
-        </activity>
-
         <activity android:name="Settings$LocationSettingsActivity"
                 android:label="@string/location_settings_title"
                 android:icon="@drawable/ic_settings_location"
