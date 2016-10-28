@@ -536,4 +536,8 @@
     <!-- Substratum dashboard -->
     <string name="substratum_title">Substratum</string>
 
+    <!-- low battery notification toggle -->
+    <string name="battery_low_notif_title">Low battery notification</string>
+    <string name="battery_low_notif_summary">Show low battery notification when enabled</string>
+
 </resources>
