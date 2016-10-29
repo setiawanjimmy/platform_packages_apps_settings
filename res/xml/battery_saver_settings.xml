@@ -26,6 +26,12 @@
             android:summary="%s" />
 
     <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="battery_save_mode_color"
+            android:title="@string/battery_saver_color_title"
+            android:summary="@string/battery_saver_color_summary"
+            android:defaultValue="true" />
+
+    <com.android.settings.preference.SystemSettingSwitchPreference
         android:key="battery_low_notification"
         android:title="@string/battery_low_notif_title"
         android:summary="@string/battery_low_notif_summary"
