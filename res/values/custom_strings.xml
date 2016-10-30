@@ -562,4 +562,7 @@
     <!-- Lockscreen charging current indicator  -->
     <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
 
+    <!-- Pin ripple -->
+    <string name="lockscreen_pin_ripple_title">Lockscreen PIN ripple</string>
+
 </resources>
