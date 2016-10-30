@@ -559,4 +559,7 @@
     <string name="notification_volume_option_title">Notification volume</string>
     <string name="ring_notification_volume_option_title">Ring and notification volume</string>
 
+    <!-- Pin ripple -->
+    <string name="lockscreen_pin_ripple_title">Lockscreen PIN ripple</string>
+
 </resources>
