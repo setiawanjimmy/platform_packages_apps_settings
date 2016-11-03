@@ -24,6 +24,8 @@ import android.content.DialogInterface.OnCancelListener;
 import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
@@ -39,6 +41,8 @@ import com.android.settings.Utils;
 
 import java.util.Date;
 
+import com.dirtyunicorns.dutweaks.preference.CustomSeekBarPreference;
+
 public class CustomSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -51,6 +55,7 @@ public class CustomSettings extends SettingsPreferenceFragment implements
     private static final String PREF_CLOCK_DATE_FORMAT = "clock_date_format";
     private static final String STATUS_BAR_CLOCK = "status_bar_show_clock";
     private static final String STATUS_BAR_CLOCK_SECONDS = "status_bar_clock_seconds";
+    private static final String KEY_SYSUI_QQS_COUNT = "sysui_qqs_count_key";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -63,6 +68,7 @@ public class CustomSettings extends SettingsPreferenceFragment implements
     private ListPreference mClockDateFormat;
     private SwitchPreference mStatusBarClock;
     private SwitchPreference mClockSeconds;
+    private CustomSeekBarPreference mSysuiQqsCount;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -120,6 +126,12 @@ public class CustomSettings extends SettingsPreferenceFragment implements
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
         mStatusBarClock.setOnPreferenceChangeListener(this);
 
+        mSysuiQqsCount = (CustomSeekBarPreference) findPreference(KEY_SYSUI_QQS_COUNT);
+        int SysuiQqsCount = Settings.Secure.getInt(getContentResolver(),
+                Settings.Secure.QQS_COUNT, 5);
+        mSysuiQqsCount.setValue(SysuiQqsCount / 1);
+        mSysuiQqsCount.setOnPreferenceChangeListener(this);
+
         boolean mClockDateToggle = Settings.System.getInt(resolver,
                 Settings.System.STATUSBAR_CLOCK_DATE_DISPLAY, 0) != 0;
         if (!mClockDateToggle) {
@@ -140,6 +152,11 @@ public class CustomSettings extends SettingsPreferenceFragment implements
         if (preference == mStatusBarClock) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_CLOCK, value ? 1 : 0);
+            return true;
+        } else if (preference == mSysuiQqsCount) {
+            int SysuiQqsCount = (Integer) newValue;
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.QQS_COUNT, SysuiQqsCount * 1);
             return true;
         } else if (preference == mClockSeconds) {
             boolean value = (Boolean) newValue;
