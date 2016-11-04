@@ -223,7 +223,7 @@
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
 
     <!-- Quick settings animation-->
-    <string name="qs_animation_title">Quick settings animation</string>
+    <string name="qs_animation_title">Animation</string>
     <string name="qs_animation_summary">Enable the nougat quick settings animation</string>
 
     <!-- Status bar - Battery -->
@@ -563,7 +563,7 @@
     <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
 
     <!-- Small tiles -->
-    <string name="sysui_qqs_count_title">Small QS tiles</string>
+    <string name="sysui_qqs_count_title">Small tiles</string>
 
     <!-- Optional screenshot type -->
     <string name="screenshot_type_title">Screenshot type</string>
