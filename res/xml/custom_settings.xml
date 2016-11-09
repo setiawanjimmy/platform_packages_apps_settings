@@ -134,12 +134,6 @@
     <PreferenceCategory
         android:title="@string/quick_settings_title">
 
-        <com.android.settings.preference.SystemSettingSwitchPreference
-            android:key="qs_fancy_animation"
-            android:title="@string/qs_animation_title"
-            android:summary="@string/qs_animation_summary"
-            android:defaultValue="true" />
-
         <com.android.settings.preference.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_brightness_slider_title"

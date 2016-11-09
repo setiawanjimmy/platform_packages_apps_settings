@@ -234,10 +234,6 @@
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
 
-    <!-- Quick settings animation-->
-    <string name="qs_animation_title">Animation</string>
-    <string name="qs_animation_summary">Enable the nougat quick settings animation</string>
-
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_percent_title">Battery percent</string>
     <string name="status_bar_battery_percent_summary">Display percent in battery drawable</string>
